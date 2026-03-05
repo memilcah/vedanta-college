@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex; 
+    justify-content: space-between;
+   align-items: center;
+    padding: 15px 60px;
+    background: black;
+    color: white;
+}
+
+.logo img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex; 
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: paleturquoise;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: peachpuff;
+    border-bottom: 2px solid green;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #A2CB8B;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    color: white;
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+   
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color:  #A2CB8B;
+}
+
+.hero-content {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.text-content {
+    max-width: 600px;
+    color: black;
+}
+
+.text-content h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.text-content span {
+    color: ivory;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary {
+    background: #656D3F;
+    color: white;
+}
+
+.primary:hover{
+    color: black;
+}
+
+.secondary {
+    background: #656D3F;
+    color: white;
+}
+
+.secondary:hover{
+    color: black;
+}
+
+/* p learning section*/
+
+.pLearningArea {
+    height: 40rem;
+   font-size: 1.5rem;  
+   font-weight: 300;
+   align-items: center;
+   display: flex;
+   background-color: white;
+}
+.pLearningArea img{
+  height: 30rem;
+}
+
+.Content{
+    margin: 2 rem;
+    padding-left: 20%;
+}
+
+.Content i{
+    font-size: 4rem;
+    color: green;
+}
+
+
+/* ================= FOOTER ================= */
+footer {
+    background: black;
+    color: #A2CB8B;
+    text-align: center;
+    padding: 20px;
+    height: 300px;
+    width: 100%;
+    align-content: center;
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:768px){
+    .hero-content {
+        text-align: center;
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+}
